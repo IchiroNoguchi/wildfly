@@ -6,6 +6,11 @@ echo ""
 echo "EXECUTE: sudo yum install dstat -y && sudo yum clean all"
 sudo yum install dstat -y && sudo yum clean all
 
+echo "cat /etc/sudoers.d/builder"
+cat /etc/sudoers.d/builder
+echo "--------------------------------------------------------"
+echo ""
+
 PID_FILE=/tmp/wildfly.pid
 
 # restore maven dependencies downloaded in a previous build,
